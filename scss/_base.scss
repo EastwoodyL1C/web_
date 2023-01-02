@@ -38,3 +38,7 @@ img {
   height: auto;
   object-fit: cover;
 }
+h1 {
+  @include text($font-secondary, 700, 96px, 96px, $color-text-primary);
+  margin: 0;
+}

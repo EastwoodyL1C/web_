@@ -2,8 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 37px 20px;
+    padding: 30px 20px;
     border-bottom: 1px solid $color-border;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $color-bg;
     &__logo {
         display: flex;
         flex-direction: row;
@@ -11,7 +16,10 @@
         box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
         transform: translatey(0px);
         animation: float 4s ease-in-out infinite;
-        img { width: 100%; height: auto; }
+        img { 
+            width: 100%; 
+            height: auto; 
+        }
     }
     &__logo-icon {
         max-width: 36px;
@@ -50,9 +58,8 @@
         align-items: center;
         gap: 24px;
     }
-
     &__a {
-        @include text($font-secondary, 400, 16px, 19px, $color-text-primary);
+        @include text($font-secondary, 400, 16px, 19px, $color-primary);
         transition: $transition;
         padding: 10px 30px;
         @include desktop-small {
@@ -64,7 +71,7 @@
     }
     @include desktop-small {
         position: fixed;
-        z-index: 9;
+        z-index: 4;
         width: 100%;
         height: 100%;
         left: 0;
@@ -77,6 +84,7 @@
             align-items: center;
             justify-content: center;
             height: 100%;
+            gap: 40px;
         }
         .header-nav__a {
             font-size: 18px;
@@ -88,6 +96,11 @@
 }
 /*nav-hover*/
 ._active:hover{
+    box-shadow: $color-black 0px -23px 25px 0px inset, $color-black 0px -36px 30px 0px inset, $color-black 0px -79px 40px 0px inset, $color-black 0px 2px 1px, $color-black 0px 4px 2px, $color-black 0px 8px 4px, $color-black 0px 16px 8px, $color-black 0px 32px 16px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+._yellow:hover{
     box-shadow: $color-neon-yellow 0px -23px 25px 0px inset, $color-neon-yellow 0px -36px 30px 0px inset, $color-neon-yellow 0px -79px 40px 0px inset, $color-neon-yellow 0px 2px 1px, $color-neon-yellow 0px 4px 2px, $color-neon-yellow 0px 8px 4px, $color-neon-yellow 0px 16px 8px, $color-neon-yellow 0px 32px 16px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -110,14 +123,14 @@
 @keyframes float {
     0% {
       box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-      transform: translatey(0px);
+      transform: translatey(10px);
     }
     50% {
       box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-      transform: translatey(-20px);
+      transform: translatey(-10px);
     }
     100% {
       box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-      transform: translatey(0px);
+      transform: translatey(10px);
     }
   }
