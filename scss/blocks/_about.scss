@@ -13,14 +13,12 @@
         padding: 30px;
         border-radius: 20px;
     }
-
     &__title {
         span {
             color: $color-neon-purple;
             margin-left: 10px;
         }
     }
-
     &__desc {
         @include text($font-secondary, 400, 18px, 27px, $color-text-primary);
         span {
