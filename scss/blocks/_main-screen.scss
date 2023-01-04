@@ -52,13 +52,16 @@
       0% {
         transform: scale(1);
         color: $color-black;
+        z-index: 1;
       }
       50% {
         transform: scale(1.15);
         color: $color-neon-purple;
+        z-index: 1;
       }
       100% {
         transform: scale(1);
         color: $color-black;
+        z-index: 1;
       }
     }
