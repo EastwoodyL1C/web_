@@ -49,16 +49,16 @@
 		}
 }
 @keyframes pulse {
-    0% {
-      transform: scale(1);
-      color: $color-black;
+      0% {
+        transform: scale(1);
+        color: $color-black;
+      }
+      50% {
+        transform: scale(1.15);
+        color: $color-neon-purple;
+      }
+      100% {
+        transform: scale(1);
+        color: $color-black;
+      }
     }
-    50% {
-      transform: scale(1.15);
-      color: $color-neon-purple;
-    }
-    100% {
-      transform: scale(1);
-      color: $color-black;
-    }
-  }
