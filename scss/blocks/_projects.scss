@@ -190,3 +190,20 @@
     margin-left: 15px;
   }
 }
+@include sm {
+  .projects {
+    &__container {
+      margin-top: 50px;
+    }
+    &__title {
+      padding: 0;
+      text-align: center;
+    }
+    &__link {
+      &::after {
+        left: 23.3%;
+        top: -55px;
+      }
+    }
+  }
+}

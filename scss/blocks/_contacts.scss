@@ -71,4 +71,15 @@
         transform: translateX(10px);
         opacity: 0.9;
     }
-  }
+}
+@include sm {
+    .contacts {
+        &__container {
+            margin-top: 50px;
+            padding-left: 50px
+        }
+        &__block {
+            margin-top: 75px;
+        }
+    }
+}

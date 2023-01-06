@@ -46,7 +46,7 @@
       &:hover {
           filter: brightness(115%);
       }
-	}
+      }
 }
 @keyframes pulse {
       0% {
@@ -74,6 +74,15 @@
             &__container {
                   margin-top: 100px;
                   width: 80%;
+            }
+      }
+}
+@include sm {
+      .main-section {
+            &__links {
+                  flex-direction: column;
+                  justify-content: center;
+                  text-align: center;
             }
       }
 }

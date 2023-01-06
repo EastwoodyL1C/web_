@@ -40,3 +40,14 @@
         }
     }
 }
+@include sm {
+    .about {
+        &__container {
+            max-width: 90%;
+        }
+        &__desc {
+            @include text($font-secondary, 400, 16px, 20px, $color-text-primary);
+        }
+    }
+    
+}
