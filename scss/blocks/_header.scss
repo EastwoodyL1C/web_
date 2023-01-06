@@ -37,7 +37,7 @@
     }
     &__burger {
         display: none;
-        @include desktop-small {
+        @include xl {
             display: block;
         }
     }
@@ -46,7 +46,7 @@
     .material-icons {
         color: $color-white;
         display: none;
-        @include desktop-small {
+        @include xl {
             display: block;
             position: absolute;
             top: 40px;
@@ -63,14 +63,14 @@
         @include text($font-secondary, 700, 16px, 19px, $color-primary);
         transition: $transition;
         padding: 10px 30px;
-        @include desktop-small {
+        @include xl {
             color: $color-white;
         }
         &:hover {
             color: $color-black;
         }
     }
-    @include desktop-small {
+    @include xl {
         position: fixed;
         z-index: 4;
         width: 100%;
