@@ -52,3 +52,11 @@ h4 {
   @include text($font-secondary, 700, 16px, 27px, $color-neon-pink);
   margin: 0;
 }
+@include md {
+  h1 {
+    @include text($font-secondary, 700, 69px, 60px, $color-text-primary);
+  }
+  h2 {
+    @include text($font-secondary, 700, 54px, 60px, $color-text-primary);
+  }
+}

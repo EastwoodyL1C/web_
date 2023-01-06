@@ -35,28 +35,28 @@
 }
 .github {
     position: absolute;
-    top: 90px;
+    top: 91px;
     left: -30px; 
 }
 .mail {
     position: absolute;
-    top: 156px;
+    top: 158px;
     left: -30px; 
 }
 .linkedin {
     position: absolute;
-    top: 220px;
+    top: 222px;
     left: -30px; 
 }
 .arrow {
-    border-color:transparent;
-    border-style:solid;
-    border-width: 10px 0;
-    display:block;
-    height:0;
-    opacity:0.4;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 10px 0px;
+    display: block;
+    height: 0;
+    opacity: 0.4;
     transform-origin: 50% 50%;
-    width:0;
+    width: 0;
 }
 .right {
     animation: arrow 0.6s infinite alternate ease-in-out;

@@ -3,14 +3,12 @@
   height: 130vh;
   background-image: url(/img/bg/projects.jpg);
   background-size: 1920px;
-  &__container {
-  }
   &__title {
     padding-left: 130px;
     padding-top: 50px;
     margin-bottom: 30px;
     span {
-        color: $color-neon-green
+      color: $color-neon-green
     }
   }
   &__block {
@@ -21,7 +19,17 @@
     justify-content: center;
     align-items: center;
     img {
-        max-height: 250px;
+      max-height: 250px;
+    }
+  }
+  &__block-js { /* <768px */
+    display: none;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    img {
+    max-height: 250px;
     }
   }
   &__link {
@@ -48,7 +56,7 @@
 .preview {
   padding: 10px;
   width: 368px;
-  height: 260px;
+  height: 270px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,28 +106,28 @@
   }
 }
 @keyframes wiggle {
-    0%, 7% {
-      transform: rotateZ(0);
-    }
-    15% {
-      transform: rotateZ(-15deg);
-    }
-    20% {
-      transform: rotateZ(10deg);
-    }
-    25% {
-      transform: rotateZ(-10deg);
-    }
-    30% {
-      transform: rotateZ(6deg);
-    }
-    35% {
-      transform: rotateZ(-4deg);
-    }
-    40%, 100% {
-      transform: rotateZ(0);
-    }
+  0%, 7% {
+    transform: rotateZ(0);
   }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
 @include xl {
   .projects {
     height: 140vh;
@@ -149,5 +157,36 @@
     &__title {
       padding-left: 80px;
     }
+  }
+}
+@include md {
+  .projects {
+    height: 100vh;
+    &__block {
+      display: none;
+    }
+    &__block-js {
+      display: block;
+    }
+    &__link {
+      &::after {
+        left: 32.3%;
+        top: -55px;
+      }
+    }
+    &__title {
+      margin-top: 50px;
+    }
+  }
+  .owl-carousel {
+    display: flex;
+    justify-content: center;
+  }
+  .owl-dots {
+    display: none;
+  }
+  .preview {
+    width: 95%;
+    margin-left: 15px;
   }
 }
