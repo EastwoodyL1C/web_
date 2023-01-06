@@ -31,3 +31,12 @@
         }
     }
 }
+@include lg {
+    .about {
+        padding: 20px 0;
+        justify-content: center;
+        &__container {
+            max-width: 80%;
+        }
+    }
+}

@@ -1,49 +1,49 @@
 .projects {
-    width: 100%;
-    height: 130vh;
+  width: 100%;
+  height: 130vh;
+  background-image: url(/img/bg/projects.jpg);
+  background-size: 1920px;
+  &__container {
+  }
+  &__title {
+    padding-left: 130px;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    span {
+        color: $color-neon-green
+    }
+  }
+  &__block {
     display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    background-image: url(/img/bg/projects.jpg);
-    background-size: 1920px;
-    &__title {
-        padding-left: 130px;
-        padding-top: 50px;
-        margin-bottom: 30px;
-        span {
-            color: $color-neon-green
-        }
+    img {
+        max-height: 250px;
     }
-    &__block {
-        display: flex;
-        flex: 0 1 33%;
-        gap: 30px;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        img {
-            max-height: 250px;
-        }
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    @include text($font-secondary, 700, 18px, 27px, $color-neon-green);
+    cursor: pointer;
+    padding: 10px 30px;
+    position: relative;
+    width: 99%;
+    animation: wiggle 3s linear infinite;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 200px;
+      height: 100px;
+      border-bottom: 2px solid $color-neon-green;
+      left: 43%;
+      top: -55px;
     }
-    &__link {
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
-        @include text($font-secondary, 700, 18px, 27px, $color-neon-green);
-        cursor: pointer;
-        padding: 10px 30px;
-        position: relative;
-        width: 99%;
-        animation: wiggle 3s linear infinite;
-        &::after {
-            position: absolute;
-            content: "";
-            width: 200px;
-            height: 100px;
-            border-bottom: 2px solid $color-neon-green;
-            left: 43%;
-            top: -55px;
-        }
-    }
+  }
 }
 .preview {
   padding: 10px;
@@ -120,3 +120,34 @@
       transform: rotateZ(0);
     }
   }
+@include xl {
+  .projects {
+    height: 140vh;
+    &__block {
+      flex: 0 1 50%;
+    }
+    &__link {
+      &::after {
+        left: 40%;
+        top: -55px;
+      }
+    }
+  }
+}
+@include lg {
+  .projects {
+    height: 180vh;
+    &__container {
+      padding: 50px 0;
+    }
+    &__link {
+      &::after {
+        left: 37.3%;
+        top: -55px;
+      }
+    }
+    &__title {
+      padding-left: 80px;
+    }
+  }
+}

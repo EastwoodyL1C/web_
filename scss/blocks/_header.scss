@@ -39,12 +39,13 @@
         display: none;
         @include xl {
             display: block;
+            color: $color-primary;
         }
     }
 }
 .header-nav {
     .material-icons {
-        color: $color-white;
+        color: $color-primary;
         display: none;
         @include xl {
             display: block;
@@ -64,7 +65,7 @@
         transition: $transition;
         padding: 10px 30px;
         @include xl {
-            color: $color-white;
+            color: $color-primary;
         }
         &:hover {
             color: $color-black;
