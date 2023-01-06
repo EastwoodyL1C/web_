@@ -60,7 +60,7 @@
         gap: 24px;
     }
     &__a {
-        @include text($font-secondary, 400, 16px, 19px, $color-primary);
+        @include text($font-secondary, 700, 16px, 19px, $color-primary);
         transition: $transition;
         padding: 10px 30px;
         @include desktop-small {

@@ -48,3 +48,7 @@ h3 {
   @include text($font-secondary, 700, 16px, 24px, $color-neon-blue);
   margin: 0;
 }
+h4 {
+  @include text($font-secondary, 700, 16px, 27px, $color-neon-pink);
+  margin: 0;
+}
