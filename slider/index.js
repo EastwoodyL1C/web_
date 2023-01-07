@@ -10,7 +10,7 @@ function carouselFn(){
      else{
       $(".owl-carousel").owlCarousel({
    
-       items:2,
+       items:1,
        margin:20,
        loop:true,
       });
