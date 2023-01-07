@@ -166,24 +166,34 @@
       display: none;
     }
     &__block-js {
+      margin-top: 100px;
       display: block;
     }
     &__link {
+      margin-top: 60px;
       &::after {
         left: 32.3%;
         top: -55px;
       }
     }
     &__title {
-      margin-top: 50px;
+      margin-top: 150px;
     }
   }
   .owl-carousel {
     display: flex;
     justify-content: center;
   }
-  .owl-dots {
-    display: none;
+  .owl-dot {
+    margin-top: 20px;
+    span {
+      background: $color-primary;
+    }
+    &.active {
+      span {
+        background: $color-neon-green;
+      }
+    }
   }
   .preview {
     width: 95%;
@@ -198,7 +208,7 @@
     }
     &__link {
       &::after {
-        left: 23.3%;
+        left: 24.5%;
         top: -55px;
       }
     }
