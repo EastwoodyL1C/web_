@@ -32,15 +32,16 @@
     max-height: 250px;
     }
   }
-  &__link {
+  &__github {
     display: flex;
     justify-content: center;
+  }
+  &__link {
     margin-top: 30px;
     @include text($font-secondary, 700, 18px, 27px, $color-neon-green);
     cursor: pointer;
     padding: 10px 30px;
     position: relative;
-    width: 99%;
     animation: wiggle 3s linear infinite;
     &::after {
       position: absolute;
@@ -48,7 +49,7 @@
       width: 200px;
       height: 100px;
       border-bottom: 2px solid $color-neon-green;
-      left: 43%;
+      left: 5px;
       top: -55px;
     }
   }
@@ -134,12 +135,6 @@
     &__block {
       flex: 0 1 50%;
     }
-    &__link {
-      &::after {
-        left: 40%;
-        top: -55px;
-      }
-    }
   }
 }
 @include lg {
@@ -147,12 +142,6 @@
     height: 180vh;
     &__container {
       padding: 50px 0;
-    }
-    &__link {
-      &::after {
-        left: 37.3%;
-        top: -55px;
-      }
     }
     &__title {
       padding-left: 80px;
@@ -171,13 +160,9 @@
     }
     &__link {
       margin-top: 60px;
-      &::after {
-        left: 32.3%;
-        top: -55px;
-      }
     }
     &__title {
-      margin-top: 150px;
+      margin-top: 50px;
     }
   }
   .owl-carousel {
@@ -205,12 +190,6 @@
     &__title {
       padding: 0;
       text-align: center;
-    }
-    &__link {
-      &::after {
-        left: 24.5%;
-        top: -55px;
-      }
     }
   }
 }
