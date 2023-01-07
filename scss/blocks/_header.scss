@@ -91,6 +91,10 @@
         .header-nav__a {
             font-size: 18px;
         }
+        .header-nav__li {
+            width: 165px;
+            text-align: center;
+        }
     }
     &._active {
         transform: translateX(0);
