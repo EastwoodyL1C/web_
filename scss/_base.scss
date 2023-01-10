@@ -11,6 +11,7 @@ body {
   font-family: $font-secondary;
   color: $color-text-primary;
   scroll-behavior: smooth;
+  background: $color-black;
 }
 html,
 body {
@@ -27,8 +28,10 @@ li {
 }
 .wrapper {
   background-image: url("./img/bg/main.jpg");
-  max-width: 1920px;
+  max-width: 1600px;
   width: 100%;
+  margin: 0 auto;
+  background-size: 125%;
 }
 .container {
   max-width: 1600px;

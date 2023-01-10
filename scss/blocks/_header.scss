@@ -5,9 +5,11 @@
     padding: 30px 20px;
     border-bottom: 1px solid $color-border;
     position: fixed;
+    max-width: 1600px;
     top: 0;
-    left: 0;
+    left: 50%;
     width: 100%;
+    transform: translateX(-50%);
     background: $color-bg;
     z-index: 4;
     &__logo {

@@ -1,6 +1,6 @@
 .projects {
   width: 100%;
-  height: 130vh;
+  height: 100vh;
   background-image: url("./img/bg/projects.jpg");
   background-size: 1920px;
   &__title {
@@ -12,9 +12,11 @@
     }
   }
   &__block {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     flex-direction: row;
-    gap: 30px;
+    gap: 20px;
+    padding: 0 20px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -25,7 +27,7 @@
   &__block-js { /* <768px */
     display: none;
     flex-direction: row;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     img {
@@ -56,7 +58,6 @@
 }
 .preview {
   padding: 10px;
-  width: 368px;
   height: 270px;
   display: flex;
   justify-content: center;
@@ -131,9 +132,8 @@
 }
 @include xl {
   .projects {
-    height: 140vh;
     &__block {
-      flex: 0 1 50%;
+      grid-template-columns: 1fr 1fr;
     }
   }
 }
