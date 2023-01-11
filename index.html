@@ -54,8 +54,28 @@
 				<div class="main-section__container">
 					<h1 class="main-section__title">HTML/CSS<span>DEVELOPER</span></h1>
 					<div class="main-section__links">
-						<a href="#contacts" class="main-section__hire">Hire me</a>
-						<a href="doc\CV_Oleksandr_Likvytskyi(PL).pdf" target="_blank" class="main-section__CV">Download CV</a>
+						<div class="main-section__job">
+							<a href="#contacts" class="main-section__hire">Hire me</a>
+						</div>
+						<div class="main-section__download download">
+							<button class="btn btn-outline-primary" id="button" type="button">
+								Download CV
+							</button>
+							<div class="card card-body content-hidden" id="content">
+								<div class="download__block">
+									<div class="download-block__lang">
+										<a href="doc\CV_Oleksandr_Likvytskyi(PL).pdf" target="_blank"><img src="img\icon\en.svg" alt="ENG">EN</a>
+									</div>
+									<div class="download-block__lang">
+										<a href="doc\CV_Oleksandr_Likvytskyi(PL).pdf" target="_blank"><img src="img\icon\pl.svg" alt="PL">PL</a>
+									</div>
+									<div class="download-block__lang">
+										<a href="doc\CV_Oleksandr_Likvytskyi(PL).pdf" target="_blank"><img src="img\icon\ua.svg" alt="UA">UA</a>
+									</div>
+								</div>
+								
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -210,6 +230,7 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 	integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
 	crossorigin="anonymous"></script>
+	<script src="show-hide-block.js"></script>
 	<script src="slider\owl.carousel.min.js"></script>
 	<script src="slider\index.js"></script>
 	<script src="scroll.js"></script>
