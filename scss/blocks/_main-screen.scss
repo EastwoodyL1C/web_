@@ -79,6 +79,12 @@
                   height: 10px;
                   margin-right: 5px;
             }
+            &:hover {
+                  transform: scale(110%);
+                  a {
+                        color: $color-primary;
+                  }
+            }
       }
 }
 .content-hidden {
